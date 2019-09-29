@@ -80,7 +80,9 @@ void renderCube(float x, float y, float z, float size) {
 		glColor3fv(colors[5]);
 		P4, P6, P2, P0;
 	}
+	glEnd();
 
+#undef P
 #undef P0
 #undef P1
 #undef P2
@@ -89,8 +91,6 @@ void renderCube(float x, float y, float z, float size) {
 #undef P5
 #undef P6
 #undef P7
-
-	glEnd();
 }
 
 void renderSponge(float x, float y, float z, float size, int depth)
